@@ -25,13 +25,13 @@ Se estiver utilizando o VirtualBox você vai fazer a mesma interação descrita 
 
 Ao iniciar vai aparecer as informações necessárias para acessar o GUI do EVE-NG, que seria o IP. Coloque o IP no navegador e as informações padrões de login no GUI são:
 
-Login: admin 
-Senha: eve
+Login: `admin` 
+Senha: `eve`
 
 E as infomaçõess de login ssh são: 
 
-  login: root 
-  senha: eve
+  login: `root`
+  senha: `eve`
 
 
 # Adição de dispositivos
@@ -39,8 +39,10 @@ E as infomaçõess de login ssh são:
 Para adicionar dispositivos no EVE-NG você vai precisar seguir alguns passos que são descritos abaixo:
 
 - Baixe o dispositivo que deseja simular utilizado a seguinte biblioteca [https://drive.labhub.eu.org/0:/addons/](url).
-Alguns dispositivos podem não fucionar, então sempre verifique a disponibilidade do dispositivo na tabela de dispositivos oficial do EVE-NG [https://www.eve-ng.net/index.php/documentation/qemu-image-namings/](url).
+Alguns dispositivos podem não fucionar, então sempre verifique a disponibilidade do dispositivo na tabela de dispositivos oficiais do EVE-NG [https://www.eve-ng.net/index.php/documentation/qemu-image-namings/](url).
 - Após fazer o download você vai utilizar o WinSCP ou linha de comando para enviar o arquivo baixado para a pasta de dispositivos. As pastas precisam está nomeadas de acordo com o que especificado na página do EVE-NG, assim como o nome do arquivo precisa ter o nome e a extensão correta.
 - O caminho para a pasta de dispositivo é: `/opt/unetlab/addons/qemu`.
+- Crie uma pasta com o nome do dispositivo e adicione o arquivo dentro dessa pasta. Por exemplo: `/opt/unetlab/addons/qemu/mikrotik.6.39/`
+- Dica: Ao criar a pasta com o nome do dispositivo coloque o mesmo nome que está na biblioteca de dispositivos. Isso pode evitar algum tipo de erro na hora de criar a pasta do dispositivo.
 - Quando mover o arquivo pra pasta do dispositivo você obrigatoriamente deve fazer o seguinte comando para aplicar as permissões e o dispositivo aparecer no EVE-NG: `/opt/unetlab/wrappers/unl_wrapper -a fixpermissions`.
 - Procure o dispositivo adicionado no EVE-NG, monte suas topologias e se divirta!
