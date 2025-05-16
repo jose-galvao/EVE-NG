@@ -4,8 +4,7 @@ Repositório dedicado para oficina de introdução ao EVE-NG ministrada para alu
 Para esse tutorial recomendo o uso do VMware Workstation Player, mas você também pode utilizar o VirtualBox.
 
 Passos a seguir:
-O primeiro passo a ser seguido é baixar a ISO do EVE-NG no site oficial
-[https://www.eve-ng.net/index.php/download/](url).
+O primeiro passo a ser seguido é baixar a ISO do EVE-NG no site oficial https://www.eve-ng.net/index.php/download/.
 
 Após o download, você precisa executar a VM como faria com outra VM, mas para essa, tem alguns requisitos que precisam ser atendidos para funcionar devidamente, principalmente se estiver utilizado o VirtualBox:
 - Você deve mudar a interface de rede e colocar no modo bridge, assim, a sua VM vai receber IP da sua rede LAN e conseguir se comunicar com qualquer dispositivo que esteja na sua rede;
@@ -38,8 +37,8 @@ E as infomaçõess de login ssh são:
 
 Para adicionar dispositivos no EVE-NG você vai precisar seguir alguns passos que são descritos abaixo:
 
-- Baixe o dispositivo que deseja simular utilizado a seguinte biblioteca [https://drive.labhub.eu.org/0:/addons/](url).
-Alguns dispositivos podem não fucionar, então sempre verifique a disponibilidade do dispositivo na tabela de dispositivos oficiais do EVE-NG [https://www.eve-ng.net/index.php/documentation/qemu-image-namings/](url).
+- Baixe o dispositivo que deseja simular utilizado a seguinte biblioteca https://drive.labhub.eu.org/0:/addons/.
+Alguns dispositivos podem não fucionar, então sempre verifique a disponibilidade do dispositivo na tabela de dispositivos oficiais do EVE-NG https://www.eve-ng.net/index.php/documentation/qemu-image-namings/.
 - Após fazer o download você vai utilizar o WinSCP ou linha de comando para enviar o arquivo baixado para a pasta de dispositivos. As pastas precisam está nomeadas de acordo com o que especificado na página do EVE-NG, assim como o nome do arquivo precisa ter o nome e a extensão correta.
 - O caminho para a pasta de dispositivo é: `/opt/unetlab/addons/qemu`.
 - Crie uma pasta com o nome do dispositivo e adicione o arquivo dentro dessa pasta. Por exemplo: `/opt/unetlab/addons/qemu/mikrotik.6.39/`
