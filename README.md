@@ -53,5 +53,5 @@ Alguns dispositivos podem não fucionar, então sempre verifique a disponibilida
 Caso você tenha uma VM que executa algum tipo de serviço e queira testar ela em algum cenário específico que não tem como você testar em ambiente real, voce pode adicionar essa VM pronta ao EVE-NG e montar sua topologia de teste.
 - Primeiro você vai colocar o disco, ou OVA da sua máquina virtual na pasta de dispositivos no EVE-NG.
 - Caso seja uma .OVA use o comando `tar xvf nome_da_vm.ova` para extrair os arquivos e o único que você vai precisar é o .vmdk;
-- Após ter o .vmdk use o comando `qemu-img convert -f vmdk -O qcow2 nome_da_vm.vmdk hda.qcow2` para converter o disco para o padrão suportado pelo EVE-NG;
+- Após ter o .vmdk use o comando `qemu-img convert -O qcow2 nome_da_vm.vmdk hda.qcow2` para converter o disco para o padrão suportado pelo EVE-NG;
 - Aplique as permissões e você poderá usar a sua VM dentro do EVE-NG.
